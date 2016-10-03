@@ -9,4 +9,11 @@ class User < ApplicationRecord
 													uniqueness: { case_sensitive: false }
 	has_secure_password
 	validates :password,		presence: true, length: { minimum: 8 }
+
+	def full_name
+		full_name = "#{first_name} #{last_name}"
+	end
+
+		
+
 end

@@ -1,21 +1,8 @@
 <div class="row">
 	<div class="col-md-6" id="home-info-panel">
-		<h2>Join the revolution and </br> crowdsource your news.</h2>
-		<div class= "info-item">
-			<%= image_tag("unfilter_icon.png", class: "icon") %>
-			<p><b>See unfiltered live video </b>of the news events you actually care about.</p>
-		</div>
-		<div class="info-item">
-			<%= image_tag("scale_icon.png", class: "icon") %>
-			<p><b>Get an unbiased view </b>from ordinary citizens on the scene.</p> 
-		</div>
-		<div class="info-item">
-			<%= image_tag("mic_icon.png", class: "icon") %>
-			<p><b>Interact directly </b>with the broadcaster through live commenting.</p>
-		</div>
+		<%= render 'shared/info_panel' %>
 	</div>
 	<div class="col-md-4" id="signup-panel">
-		<h2>Sign Up</h2>
-		<%= link_to "Sign Up", '#', class: "btn btn-success btn-lg btn-block" %>
+		<%= render 'shared/signup_form' %>
   </div>
 </div>
